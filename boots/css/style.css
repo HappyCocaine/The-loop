@@ -91,8 +91,7 @@ body {
 
 .header {
   padding-top: 61px;
-  background-color: #F9F6F1;
-  padding-bottom: 500px; }
+  background-color: #F9F6F1; }
 
 .nav {
   display: -webkit-box;
@@ -104,7 +103,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding-bottom: 160px; }
+  padding-bottom: 126px; }
   .nav__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -155,17 +154,16 @@ body {
   display: flex;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: top;
-  -ms-flex-align: top;
-  align-items: top; }
+  justify-content: center; }
   .content__left {
-    max-width: 50%;
-    max-width: 570px; }
+    max-width: 570px;
+    padding-bottom: 150px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
   .content__right {
-    max-width: 50%;
-    background-color: #fff;
-    background-image: url("/img/boots.png"); }
+    width: 556px;
+    background: url("../img/boots.png") center top no-repeat; }
   .content__title {
     font-weight: 400;
     font-size: 30px;

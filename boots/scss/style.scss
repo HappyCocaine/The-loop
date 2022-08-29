@@ -29,14 +29,13 @@ body{
 .header{
     padding-top: 61px;
     background-color: $header_back;
-    padding-bottom: 500px;
 }
 
 .nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 160px;
+    padding-bottom: 126px;
     
 
     &__list{
@@ -83,18 +82,18 @@ body{
 .content{
     display: flex;
     justify-content: center;
-    align-items: top;
+    
     &__left{
-        max-width: 50%;
         max-width: 570px;
+        padding-bottom: 150px;
+        align-items: center;
         
     }
 
     &__right{
-        max-width: 50%;
-        background-color: #fff;
-        background-image: url("/img/boots.png");
-        // Блять, она не отображается
+        width: 556px;
+        background: url('../img/boots.png') center top no-repeat;
+        // Блять, онaа не отображается
 
         
     }
