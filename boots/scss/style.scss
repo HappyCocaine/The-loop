@@ -1,0 +1,124 @@
+@import './reset.scss';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+$btn_back: #D7B399;
+$promo_color: #212121;
+$btn_color: #fff;
+$header_back: #F9F6F1;
+
+@mixin btn__style {
+    color: $btn_color;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 3%;
+    text-transform: uppercase;
+    background-color: $btn_back;
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.container{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+.header{
+    padding-top: 61px;
+    background-color: $header_back;
+    padding-bottom: 500px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 160px;
+    
+
+    &__list{
+        display: flex;
+        align-items: center;
+        column-gap: 35px;
+    }
+}
+
+.triangle{
+	width: 0;
+	height: 0;
+	border-width: 5px 2.5px 0 2.5px;
+	border-color: #212121 transparent transparent transparent;
+	border-style: solid;
+    margin-left: -25px;
+}
+
+
+.logo{
+    display: flex;
+    align-items: center;
+    &__img{
+        margin-right: 20px;
+    }
+    &__title{
+        text-transform: uppercase;
+        font-size: 24px;
+        font-weight: 700;
+        color: $promo_color;
+        letter-spacing: 5%;
+    }
+}
+
+.order{
+    display: flex;
+    align-items: center;
+    &__img{
+        margin-right: 23px;
+    }
+   
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    &__left{
+        max-width: 50%;
+        max-width: 570px;
+        
+    }
+
+    &__right{
+        max-width: 50%;
+        background-color: #fff;
+        background-image: url("/img/boots.png");
+        // Блять, она не отображается
+
+        
+    }
+
+    &__title{
+        font-weight: 400;
+        font-size: 30px;
+        letter-spacing: 2%;
+        color: #000;
+        margin-bottom: 35px;
+    }
+
+    &__descr{
+        font-weight: 700;
+        letter-spacing: 4%;
+        font-size: 55px;
+        color: #000;
+        text-transform: uppercase;
+    }
+
+    &__link{
+        @include btn__style;
+        padding: 17px 30px 18px 29px;
+        display: inline-block;
+        margin-top: 50px;
+    }
+}
